@@ -5,12 +5,7 @@ namespace API.Server.Dto
 {
     public class DtoServidor
     {
-        public DtoServidor(string name, string ipAdress, string description)
-        {
-            Name = name;
-            IpAdress = ipAdress;
-            Description = description;
-        }
+    
 
         public string Name { get; set; }
         public string IpAdress { get; set; }

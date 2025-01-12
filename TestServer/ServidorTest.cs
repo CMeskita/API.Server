@@ -39,7 +39,10 @@ namespace TestServer
         [Fact]
         public void Cadstrar_Servidor()
         {
-            DtoServidor dados = new(Name, IpAdress, Description);
+            DtoServidor dados = new DtoServidor();
+               dados.Name = Name;
+               dados.IpAdress = IpAdress;
+               dados.Description=Description;
             var result = _controller.InsertServidor(dados);
             Assert.NotNull(result);
 
